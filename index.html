@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-soft-orange: #e9ab53;
+        --color-soft-red: #f15e50;
+        --color-off-white: #fffdfa;
+        --color-dark-grayish-blue: #5d5f79;
+        --color-very-dark-blue: #00001a;
+        --color-grayish-blue: #c5c6ce;
+        --font-inter: "Inter", sans-serif;
+      }
+    </style>
+    <title>News Home Page</title>
+  </head>
+  <body class="font-inter">
+    <!-- nav  -->
+    <nav
+      class="container mx-auto px-[20px] py-[40px] md:px-[40px] md:pt-[50px] md:pb-[30px] lg:px-[120px] lg:pt-[66px] lg:pb[34px] flex justify-between items-center"
+    >
+      <!--nav-logo-->
+      <div>
+        <img src="./assets/logo.svg" alt="nav-logo" />
+      </div>
+      <!-- nav-items -->
+
+      <div>
+        <ul
+          class="hidden gap-13 md:flex text-dark-grayish-blue font-[400]"
+        >
+          <li class="hover:text-soft-orange cursor-pointer">Home</li>
+          <li class="hover:text-soft-orange cursor-pointer">New</li>
+          <li class="hover:text-soft-orange cursor-pointer">Popular</li>
+          <li class="hover:text-soft-orange cursor-pointer">Trending</li>
+          <li class="hover:text-soft-orange cursor-pointer">Categories</li>
+        </ul>
+      </div>
+      <!-- menu-logo -->
+      <div class="md:hidden">
+        <img src="./assets/icon-menu.svg" alt="icon-menu" />
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main
+      class="container mx-auto px-[20px] md:px-[40px] md:py-0 lg:px-[120px] pb-4"
+    >
+      <!-- section-1 -->
+      <section class="grid lg:grid-cols-3 gap-12">
+        <!-- div-1 -->
+        <div class="lg:col-span-2">
+          <div>
+            <img
+              src="./assets/image-web-3-desktop.jpg"
+              alt="desktop-hero-img"
+              class="hidden md:block"
+            />
+            <img
+              src="./assets/image-web-3-mobile.jpg"
+              alt="mobile-hero-img"
+              class="md:hidden"
+            />
+          </div>
+
+          <div class="md:flex pt-5">
+            <h1 class="flex-1 pr-8 font-[800] text-[43px] md:text-[50px] ">The Bright Future of Web 3.0?</h1>
+            <div class="flex-1 flex flex-col justify-between pt-2 pb-3">
+              <p class="text-[15px] text-dark-grayish-blue leading-loose">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="bg-soft-red w-40 font-bold mt-4 md:mt-4 p-3 lg:hover:bg-very-dark-blue lg:hover:text-off-white cursor-pointer">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <!-- div-2 -->
+        <div class="bg-very-dark-blue p-4">
+          <h1 class="text-soft-orange text-[40px] font-bold">New</h1>
+          <div class="">
+          <h2 class="text-off-white hover:text-soft-orange cursor-pointer">Hydrogen VS Electric Cars</h2>
+          <p class="text-dark-grayish-blue">Will hydrogen-fueled cars ever catch up to the EVs</p>
+          </div>
+          <div>
+          <h2 class="text-off-white hover:text-soft-orange cursor-pointer">The Downsides of AI Artistry</h2>
+          <p class="text-dark-grayish-blue">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          </div>
+          <div>
+          <h2 class="text-off-white hover:text-soft-orange cursor-pointer">Is VC Funding Drying Up?</h2>
+          <p class="text-dark-grayish-blue">
+            Private funding by VC funds is down 50% YOY. We take a look at what
+            that means.
+          </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
